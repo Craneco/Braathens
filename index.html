@@ -3,28 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Buss & Vogntogskolen AS – Profesjonell føreropplæring for buss (klasse D) og vogntog (klasse C/CE) i Norge. Erfarne instruktører og høy bestått-prosent." />
-  <title>Buss &amp; Vogntogskolen AS</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Buss & Vogntogskolen AS i Narvik – Totalleverandør av opplæring for transportnæringen siden 1990. Førerkort C, CE, D, ADR, Truck, Kran, Maskinføring og YSK." />
+  <meta name="keywords" content="trafikkskole narvik, lastebil kurs, vogntog, buss, ADR, YSK, truck, kran, maskinføring" />
+  <title>Buss &amp; Vogntogskolen AS – Narvik | Totalleverandør for transportopplæring</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  <!-- ===== TOPBAR ===== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__links">
+        <a href="tel:+4776963000"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>76 96 30 00</a>
+        <a href="mailto:post@transportskolen.com"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>post@transportskolen.com</a>
+        <span class="topbar__sep">|</span>
+        <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Kongens gate 55, 8514 Narvik</span>
+      </div>
+      <div class="topbar__right">
+        <span>Man–fre 08–16, Lør 09–13</span>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== HEADER ===== -->
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#" class="logo">
-        <span class="logo__icon">🚌</span>
-        <span class="logo__text">Buss &amp; Vogntogskolen <em>AS</em></span>
+        <div class="logo__mark">
+          <svg viewBox="0 0 40 40" fill="none">
+            <rect width="40" height="40" rx="8" fill="#E85D04"/>
+            <path d="M6 26h4v4H6zm8 0h4v4h-4zm8 0h4v4h-4z" fill="white" opacity=".6"/>
+            <path d="M4 22l2-8h22l2 8H4z" fill="white"/>
+            <circle cx="10" cy="28" r="3" fill="white"/>
+            <circle cx="26" cy="28" r="3" fill="white"/>
+            <path d="M30 18h4l2 4v4h-6v-8z" fill="white" opacity=".8"/>
+          </svg>
+        </div>
+        <div class="logo__text-wrap">
+          <span class="logo__name">Buss &amp; Vogntogskolen</span>
+          <span class="logo__sub">AS · Narvik</span>
+        </div>
       </a>
       <nav class="nav" id="nav">
         <ul class="nav__list">
           <li><a href="#om-oss" class="nav__link">Om oss</a></li>
-          <li><a href="#kurs" class="nav__link">Kurs</a></li>
-          <li><a href="#hvorfor-oss" class="nav__link">Hvorfor oss</a></li>
-          <li><a href="#instruktorer" class="nav__link">Instruktører</a></li>
-          <li><a href="#kontakt" class="nav__link nav__link--cta">Kontakt oss</a></li>
+          <li class="nav__dropdown">
+            <a href="#kurs" class="nav__link nav__link--arrow">Kurs <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+            <div class="dropdown">
+              <div class="dropdown__col">
+                <span class="dropdown__label">Førerkort</span>
+                <a href="#kurs" class="dropdown__item">Klasse C – Lastebil</a>
+                <a href="#kurs" class="dropdown__item">Klasse CE – Vogntog</a>
+                <a href="#kurs" class="dropdown__item">Klasse D – Buss</a>
+                <a href="#kurs" class="dropdown__item">Klasse BE</a>
+              </div>
+              <div class="dropdown__col">
+                <span class="dropdown__label">Spesialkurs</span>
+                <a href="#kurs" class="dropdown__item">ADR – Farlig gods</a>
+                <a href="#kurs" class="dropdown__item">Truck &amp; Stortruck</a>
+                <a href="#kurs" class="dropdown__item">Lastebilkran</a>
+                <a href="#kurs" class="dropdown__item">Maskinføring</a>
+              </div>
+              <div class="dropdown__col">
+                <span class="dropdown__label">Kompetanse</span>
+                <a href="#kurs" class="dropdown__item">YSK – Yrkessjåfør</a>
+                <a href="#kurs" class="dropdown__item">Digital tachograf</a>
+                <a href="#kurs" class="dropdown__item">Sikring av last</a>
+                <a href="#kurs" class="dropdown__item">Bedriftskurs</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#bedrift" class="nav__link">Bedrift</a></li>
+          <li><a href="#om-oss" class="nav__link">Instruktører</a></li>
+          <li><a href="#kontakt" class="nav__link btn-nav">Ring meg</a></li>
         </ul>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Åpne meny" aria-expanded="false">
@@ -35,64 +88,166 @@
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="hjem">
-    <div class="hero__overlay"></div>
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+    </div>
     <div class="container hero__content">
-      <span class="hero__badge">Godkjent trafikkskole</span>
-      <h1 class="hero__title">Din vei til <br /><span class="highlight">yrkessjåfør</span></h1>
-      <p class="hero__sub">Profesjonell opplæring for buss og vogntog – med erfarne instruktører, moderne kjøretøy og høy bestått-prosent.</p>
-      <div class="hero__actions">
-        <a href="#kurs" class="btn btn--primary">Se våre kurs</a>
-        <a href="#kontakt" class="btn btn--outline">Kontakt oss</a>
+      <div class="hero__left">
+        <div class="hero__badge">
+          <span class="badge-dot"></span>
+          Godkjent trafikkskole · Narvik siden 1990
+        </div>
+        <h1 class="hero__title">
+          Totalleverandør for<br />
+          <span class="hero__title-em">transportopplæring</span><br />
+          i Nord-Norge
+        </h1>
+        <p class="hero__lead">
+          Buss &amp; Vogntogskolen AS tilbyr alt fra førerkort C, CE og D til ADR, truck, kran, maskinføring og yrkessjåførkompetanse. Vi utruster yrkessjåfører som er klare for arbeid.
+        </p>
+        <div class="hero__actions">
+          <a href="#kurs" class="btn btn--orange">Se alle kurs</a>
+          <a href="#kontakt" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Ring 76 96 30 00
+          </a>
+        </div>
+        <div class="hero__trust">
+          <div class="trust-item">
+            <strong>30+</strong>
+            <span>År med erfaring</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>12+</strong>
+            <span>Kurstyper</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>100%</strong>
+            <span>Godkjent av Vegvesenet</span>
+          </div>
+        </div>
       </div>
-      <div class="hero__stats">
-        <div class="stat">
-          <span class="stat__number">95%</span>
-          <span class="stat__label">Bestått-prosent</span>
-        </div>
-        <div class="stat">
-          <span class="stat__number">20+</span>
-          <span class="stat__label">År med erfaring</span>
-        </div>
-        <div class="stat">
-          <span class="stat__number">3000+</span>
-          <span class="stat__label">Fornøyde elever</span>
+      <div class="hero__right">
+        <div class="hero__card-stack">
+          <div class="hcard hcard--main">
+            <div class="hcard__icon">🚛</div>
+            <div>
+              <strong>Klasse CE – Vogntog</strong>
+              <span>Norges viktigste gods-sertifikat</span>
+            </div>
+            <a href="#kurs" class="hcard__arrow">→</a>
+          </div>
+          <div class="hcard hcard--secondary">
+            <div class="hcard__icon">🚌</div>
+            <div>
+              <strong>Klasse D – Buss</strong>
+              <span>Kollektivtransport &amp; turbuss</span>
+            </div>
+            <a href="#kurs" class="hcard__arrow">→</a>
+          </div>
+          <div class="hcard hcard--secondary">
+            <div class="hcard__icon">⚠️</div>
+            <div>
+              <strong>ADR – Farlig gods</strong>
+              <span>Grunnkurs og tankkurs</span>
+            </div>
+            <a href="#kurs" class="hcard__arrow">→</a>
+          </div>
+          <div class="hcard hcard--secondary">
+            <div class="hcard__icon">🏗️</div>
+            <div>
+              <strong>Kran &amp; Maskin</strong>
+              <span>Lastebilkran og maskinføring</span>
+            </div>
+            <a href="#kurs" class="hcard__arrow">→</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="hero__vehicles">
-      <div class="vehicle-icon vehicle-icon--bus">🚌</div>
-      <div class="vehicle-icon vehicle-icon--truck">🚛</div>
+    <div class="hero__scroll">
+      <div class="scroll-indicator"><span></span></div>
     </div>
   </section>
+
+  <!-- ===== KURSTYPER BAND ===== -->
+  <div class="kurs-band">
+    <div class="container">
+      <div class="kurs-band__inner">
+        <div class="kurs-band__item"><span>C</span>Lastebil</div>
+        <div class="kurs-band__item"><span>CE</span>Vogntog</div>
+        <div class="kurs-band__item"><span>D</span>Buss</div>
+        <div class="kurs-band__item"><span>BE</span>Henger</div>
+        <div class="kurs-band__item"><span>ADR</span>Farlig gods</div>
+        <div class="kurs-band__item"><span>🏗</span>Kran</div>
+        <div class="kurs-band__item"><span>🚜</span>Maskin</div>
+        <div class="kurs-band__item"><span>YSK</span>Yrkessjåfør</div>
+        <div class="kurs-band__item"><span>📟</span>Tachograf</div>
+        <div class="kurs-band__item"><span>🔒</span>Lastsikring</div>
+      </div>
+    </div>
+  </div>
 
   <!-- ===== OM OSS ===== -->
   <section class="section om-oss" id="om-oss">
     <div class="container">
-      <div class="section__header">
-        <span class="section__tag">Om oss</span>
-        <h2 class="section__title">Norges ledende skole for buss og vogntog</h2>
-        <p class="section__desc">Siden 2003 har Buss &amp; Vogntogskolen AS utdannet yrkessjåfører til norsk næringsliv. Vi er en godkjent trafikkskole med fokus på sikkerhet, faglig dyktighet og praktisk erfaring.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-card__icon">🎓</div>
-          <h3>Godkjent opplæring</h3>
-          <p>Alle kurs følger Statens vegvesen sine krav og er godkjent for offentlig finansiering via NAV og Lånekassen.</p>
+      <div class="om-oss__inner">
+        <div class="om-oss__visual">
+          <div class="visual-card visual-card--main">
+            <div class="vc__icon">🏆</div>
+            <strong>Over 30 år i bransjen</strong>
+            <p>Siden 1990 har vi levert kvalitetsopplæring i Narvik og Nord-Norge</p>
+          </div>
+          <div class="visual-card visual-card--float visual-card--top">
+            <div class="vc__row">
+              <div class="vc__dot"></div>
+              <span>Godkjent av Statens vegvesen</span>
+            </div>
+          </div>
+          <div class="visual-card visual-card--float visual-card--bot">
+            <div class="vc__row">
+              <span class="vc__num">Org. 912 163 717</span>
+              <span>· Aksjeselskap</span>
+            </div>
+          </div>
         </div>
-        <div class="feature-card">
-          <div class="feature-card__icon">🚗</div>
-          <h3>Moderne kjøretøy</h3>
-          <p>Vi holder kjøretøyparken oppdatert med moderne busser og vogntog utstyrt med sikkerhetsteknologi.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon">📋</div>
-          <h3>Skreddersydd opplegg</h3>
-          <p>Vi tilpasser opplæringen til din bakgrunn og tilgjengelighet – heltid, deltid og bedriftskurs.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon">🤝</div>
-          <h3>Jobbnettverk</h3>
-          <p>Vi samarbeider med transportselskaper og bussoperatører som aktivt rekrutterer fra våre elever.</p>
+        <div class="om-oss__content">
+          <span class="tag">Om oss</span>
+          <h2>Nordens ledende fagskole for yrkessjåfører</h2>
+          <p class="lead">Vi er en <strong>totalleverandør av opplæring for transportnæringen</strong>. Hos oss finner sjåfører, bedrifter og arbeidssøkere alt de trenger for å komme inn i – eller rykke opp i – transportyrket.</p>
+          <p>Daglig leder <strong>Kjell Christian Krane</strong> og teamet hans har dypt faglig engasjement og praktisk erfaring fra bransjen. Vi holder til i Sentrumsgården i hjertet av Narvik og tar imot elever fra hele Nord-Norge.</p>
+          <div class="om-oss__feats">
+            <div class="feat">
+              <div class="feat__icon">✓</div>
+              <div>
+                <strong>Totalleverandør</strong>
+                <p>Alt fra førerkort til spesialiserte fagkurs på ett sted</p>
+              </div>
+            </div>
+            <div class="feat">
+              <div class="feat__icon">✓</div>
+              <div>
+                <strong>Praktisk erfaring</strong>
+                <p>Instruktører med bakgrunn fra transportbransjen</p>
+              </div>
+            </div>
+            <div class="feat">
+              <div class="feat__icon">✓</div>
+              <div>
+                <strong>NAV-godkjent</strong>
+                <p>Vi samarbeider med NAV for finansiering av kurs</p>
+              </div>
+            </div>
+            <div class="feat">
+              <div class="feat__icon">✓</div>
+              <div>
+                <strong>Bedriftskurs</strong>
+                <p>Skreddersydde opplegg for bedrifter i hele regionen</p>
+              </div>
+            </div>
+          </div>
+          <a href="#kontakt" class="btn btn--orange">Ta kontakt</a>
         </div>
       </div>
     </div>
@@ -102,230 +257,312 @@
   <section class="section kurs" id="kurs">
     <div class="container">
       <div class="section__header">
-        <span class="section__tag">Kurs</span>
-        <h2 class="section__title">Velg din klasse</h2>
-        <p class="section__desc">Vi tilbyr føreropplæring for alle relevante kategorier innen buss og tunge kjøretøy.</p>
+        <span class="tag">Kurs og opplæring</span>
+        <h2>Vi tilbyr hele spekteret av transportopplæring</h2>
+        <p>Uansett om du er ny i bransjen eller erfaren sjåfør som trenger påfyll – vi har kurset for deg.</p>
       </div>
-      <div class="kurs-grid">
 
-        <div class="kurs-card kurs-card--featured">
-          <div class="kurs-card__badge">Mest populær</div>
-          <div class="kurs-card__icon">🚌</div>
-          <h3 class="kurs-card__title">Klasse D – Buss</h3>
-          <p class="kurs-card__desc">Sertifikat for buss med mer enn 8 sitteplasser (utenom fører). Kreves for yrkessjåfør i kollektivtrafikk.</p>
-          <ul class="kurs-card__list">
-            <li>✅ Trafikalt grunnkurs (hvis nødvendig)</li>
-            <li>✅ Teori og kjøreopplæring</li>
-            <li>✅ Obligatorisk sikkerhetskurs</li>
-            <li>✅ YSK – Yrkessjåførkompetanse</li>
-            <li>✅ Eksamensforberedelse</li>
-          </ul>
-          <div class="kurs-card__footer">
-            <a href="#kontakt" class="btn btn--primary btn--full">Meld deg på</a>
-          </div>
-        </div>
-
-        <div class="kurs-card">
-          <div class="kurs-card__icon">🚛</div>
-          <h3 class="kurs-card__title">Klasse C – Lastebil</h3>
-          <p class="kurs-card__desc">Sertifikat for lastebil over 3 500 kg. Grunnlaget for videre opplæring til CE (vogntog).</p>
-          <ul class="kurs-card__list">
-            <li>✅ Teori og kjøreopplæring</li>
-            <li>✅ Sikkerhetskurs på bane</li>
-            <li>✅ Sikkerhetskurs på veg</li>
-            <li>✅ Eksamensforberedelse</li>
-          </ul>
-          <div class="kurs-card__footer">
-            <a href="#kontakt" class="btn btn--secondary btn--full">Meld deg på</a>
-          </div>
-        </div>
-
-        <div class="kurs-card">
-          <div class="kurs-card__icon">🚚</div>
-          <h3 class="kurs-card__title">Klasse CE – Vogntog</h3>
-          <p class="kurs-card__desc">Kombinasjonsklasse for vogntog – lastebil med tilhenger over 750 kg. Krever gyldig klasse C.</p>
-          <ul class="kurs-card__list">
-            <li>✅ Kjøreopplæring med tilhenger</li>
-            <li>✅ Kobling og sikring av last</li>
-            <li>✅ Sikkerhetskurs</li>
-            <li>✅ Eksamensforberedelse</li>
-          </ul>
-          <div class="kurs-card__footer">
-            <a href="#kontakt" class="btn btn--secondary btn--full">Meld deg på</a>
-          </div>
-        </div>
-
-        <div class="kurs-card">
-          <div class="kurs-card__icon">📜</div>
-          <h3 class="kurs-card__title">YSK – Yrkessjåførkurs</h3>
-          <p class="kurs-card__desc">Obligatorisk kompetansebevis for yrkessjåfører i EU/EØS. Grunnutdanning og periodisk etterutdanning.</p>
-          <ul class="kurs-card__list">
-            <li>✅ Grunnutdanning 280 timer</li>
-            <li>✅ Akselerert utdanning 140 timer</li>
-            <li>✅ Etterutdanning 35 timer</li>
-            <li>✅ Digitalt kompetansebevis</li>
-          </ul>
-          <div class="kurs-card__footer">
-            <a href="#kontakt" class="btn btn--secondary btn--full">Meld deg på</a>
-          </div>
-        </div>
-
-        <div class="kurs-card">
-          <div class="kurs-card__icon">🏢</div>
-          <h3 class="kurs-card__title">Bedriftskurs</h3>
-          <p class="kurs-card__desc">Skreddersydde kurs for bedrifter som vil oppgradere sine sjåfører. Tilpasses tid og sted.</p>
-          <ul class="kurs-card__list">
-            <li>✅ Grupperabatter</li>
-            <li>✅ Opplæring på bedriftens anlegg</li>
-            <li>✅ Fleksible tidspunkt</li>
-            <li>✅ Kursbevis og dokumentasjon</li>
-          </ul>
-          <div class="kurs-card__footer">
-            <a href="#kontakt" class="btn btn--secondary btn--full">Få tilbud</a>
-          </div>
-        </div>
-
-        <div class="kurs-card">
-          <div class="kurs-card__icon">🔄</div>
-          <h3 class="kurs-card__title">Oppfriskningskurs</h3>
-          <p class="kurs-card__desc">For sjåfører som trenger å friske opp ferdighetene eller er bekymret for eksamen. Kortere, intensivt opplegg.</p>
-          <ul class="kurs-card__list">
-            <li>✅ Skreddersydd til ditt behov</li>
-            <li>✅ Fokus på svake punkter</li>
-            <li>✅ Eksamenssimulering</li>
-            <li>✅ Mentalt forberedelseskurs</li>
-          </ul>
-          <div class="kurs-card__footer">
-            <a href="#kontakt" class="btn btn--secondary btn--full">Meld deg på</a>
-          </div>
-        </div>
-
+      <div class="kurs-tabs" id="kurs-tabs">
+        <button class="kurs-tab active" data-tab="forerkort">Førerkort</button>
+        <button class="kurs-tab" data-tab="spesial">Spesialkurs</button>
+        <button class="kurs-tab" data-tab="kompetanse">Kompetanse</button>
+        <button class="kurs-tab" data-tab="bedrift">Bedrift</button>
       </div>
+
+      <!-- Førerkort -->
+      <div class="kurs-panel active" id="tab-forerkort">
+        <div class="kurs-grid">
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#1d3557">
+              <span class="kk__klass">C</span>
+              <h3>Klasse C – Lastebil</h3>
+            </div>
+            <div class="kk__body">
+              <p>Sertifikat for kjøretøy over 3 500 kg. Grunnlaget for videre faglig utvikling som yrkessjåfør.</p>
+              <ul>
+                <li>Teori og kjøretimer</li>
+                <li>Sikkerhetskurs på bane og veg</li>
+                <li>YSK grunnutdanning inkludert</li>
+                <li>Eksamensforberedelse</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk kk--featured">
+            <div class="kk__badge">Mest etterspurt</div>
+            <div class="kk__head" style="--kk-color:#e85d04">
+              <span class="kk__klass">CE</span>
+              <h3>Klasse CE – Vogntog</h3>
+            </div>
+            <div class="kk__body">
+              <p>Kombinasjonsklasse for vogntog med tilhenger. Krever gyldig klasse C. Det mest ettertraktede sertifikatet i godstransport.</p>
+              <ul>
+                <li>Kobling og frakobling av henger</li>
+                <li>Kjøring med fullt vogntog</li>
+                <li>Sikring og kontroll av last</li>
+                <li>Internasjonal transport</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#2b6cb0">
+              <span class="kk__klass">D</span>
+              <h3>Klasse D – Buss</h3>
+            </div>
+            <div class="kk__body">
+              <p>Sertifikat for buss med mer enn 8 passasjerplasser. Påkrevd for kollektivtrafikk, turbuss og skolebuss.</p>
+              <ul>
+                <li>Teori og kjøretimer</li>
+                <li>Obligatorisk sikkerhetskurs</li>
+                <li>YSK personbefordring</li>
+                <li>D1E og D1 tilgjengelig</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#276749">
+              <span class="kk__klass">BE</span>
+              <h3>Klasse BE – Tilhenger</h3>
+            </div>
+            <div class="kk__body">
+              <p>Sertifikat for personbil med tilhenger over 750 kg. Viktig for mange yrkessjåfører med lett transport.</p>
+              <ul>
+                <li>Kobling og manøvrering</li>
+                <li>Sikring av last på tilhenger</li>
+                <li>Teori og praktisk eksamen</li>
+                <li>Korte kursforløp</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spesialkurs -->
+      <div class="kurs-panel" id="tab-spesial">
+        <div class="kurs-grid">
+          <div class="kk kk--featured">
+            <div class="kk__badge">Obligatorisk for mange</div>
+            <div class="kk__head" style="--kk-color:#c53030">
+              <span class="kk__klass">ADR</span>
+              <h3>ADR – Farlig gods</h3>
+            </div>
+            <div class="kk__body">
+              <p>Obligatorisk opplæring for transport av farlig gods. Inkluderer grunnkurs, spesialisering og tankkurs.</p>
+              <ul>
+                <li>Grunnkurs klasse 1–9</li>
+                <li>Tankkurs (cisterne)</li>
+                <li>Eksplosivkurs (klasse 1)</li>
+                <li>Fornyelseskurs hvert 5. år</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#744210">
+              <span class="kk__klass">🏗</span>
+              <h3>Lastebilkran</h3>
+            </div>
+            <div class="kk__body">
+              <p>Sertifisering for betjening av lastebilmontert kran. Kreves av de fleste arbeidsgivere i anlegg og bygg.</p>
+              <ul>
+                <li>Teori og praktisk kranopplæring</li>
+                <li>Løft og slyngekurs</li>
+                <li>Sertifikat etter godkjent eksamen</li>
+                <li>Løfteutstyr og sikkerhet</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#553c9a">
+              <span class="kk__klass">🚜</span>
+              <h3>Maskinføring</h3>
+            </div>
+            <div class="kk__body">
+              <p>Opplæring i betjening av anleggsmaskiner som gravemaskin, hjullaster og dumper – tilpasset nivå og maskinklasse.</p>
+              <ul>
+                <li>Gravemaskin og hjullaster</li>
+                <li>Dumper og kompressor</li>
+                <li>Asfalt- og vegmaskin</li>
+                <li>Sertifisering og dokumentasjon</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#2c7a7b">
+              <span class="kk__klass">🏭</span>
+              <h3>Truck &amp; Stortruck</h3>
+            </div>
+            <div class="kk__body">
+              <p>Fra gaffeltruck til stortruck – vi dekker alle klasser og sertifiseringsnivåer etter norsk standard.</p>
+              <ul>
+                <li>Klasse T1–T4 gaffeltruck</li>
+                <li>Stortruck og reachtruck</li>
+                <li>Teorikurs og praktisk opplæring</li>
+                <li>Dokumentasjon for arbeidsgiver</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kompetanse -->
+      <div class="kurs-panel" id="tab-kompetanse">
+        <div class="kurs-grid">
+          <div class="kk kk--featured">
+            <div class="kk__badge">Krav i EU/EØS</div>
+            <div class="kk__head" style="--kk-color:#2b6cb0">
+              <span class="kk__klass">YSK</span>
+              <h3>Yrkessjåførkompetanse</h3>
+            </div>
+            <div class="kk__body">
+              <p>Obligatorisk for yrkessjåfører i EU/EØS. Vi tilbyr grunnutdanning, akselerert utdanning og etterutdanning.</p>
+              <ul>
+                <li>YDP / EYDP – godstransport</li>
+                <li>YDG / EYDG – persontransport</li>
+                <li>Grunnutdanning 280 / 140 timer</li>
+                <li>Etterutdanning 35 timer</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#1d3557">
+              <span class="kk__klass">📟</span>
+              <h3>Digital tachograf</h3>
+            </div>
+            <div class="kk__body">
+              <p>Opplæring i bruk av digital fartsskriver. Krav til yrkessjåfører i internasjonal og nasjonal transport.</p>
+              <ul>
+                <li>Lovverk og kjøre-/hviletid</li>
+                <li>Betjening av digital tachograf</li>
+                <li>Nedlasting og arkivering</li>
+                <li>Hva gjøres ved feil?</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#276749">
+              <span class="kk__klass">🔒</span>
+              <h3>Sikring av last</h3>
+            </div>
+            <div class="kk__body">
+              <p>Praktisk og teoretisk opplæring i korrekt lastsikring. Forebygger ulykker og kostsomme bøter.</p>
+              <ul>
+                <li>Lover og forskrifter</li>
+                <li>Surringsteknikk og surringsutstyr</li>
+                <li>Beregning av surringskraft</li>
+                <li>Kursbevis ved fullføring</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+          <div class="kk">
+            <div class="kk__head" style="--kk-color:#744210">
+              <span class="kk__klass">🔄</span>
+              <h3>Fornyelse og repetisjon</h3>
+            </div>
+            <div class="kk__body">
+              <p>Fornyelse av ADR, YSK, tachograf og andre sertifikater. Vi hjelper deg å holde kompetansen oppdatert.</p>
+              <ul>
+                <li>ADR fornyelse hvert 5. år</li>
+                <li>YSK etterutdanning hvert 5. år</li>
+                <li>Repetisjonskurs etter behov</li>
+                <li>Samlet timeplan for bedrifter</li>
+              </ul>
+              <a href="#kontakt" class="kk__cta">Meld deg på →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bedrift -->
+      <div class="kurs-panel" id="tab-bedrift">
+        <div class="bedrift-layout">
+          <div class="bedrift-content">
+            <span class="tag">For bedrifter</span>
+            <h3>Vi er din opplæringspartner</h3>
+            <p class="lead">Vi tilbyr skreddersydde kursopplegg for transportbedrifter, anleggsselskaper og andre næringsdrivende i Nord-Norge. Enten du trenger å kurse 2 eller 200 ansatte – vi finner en løsning.</p>
+            <div class="bedrift-feats">
+              <div class="b-feat"><span>🗓</span><div><strong>Fleksible tidspunkt</strong><p>Kurs tilpasset din produksjonsplan</p></div></div>
+              <div class="b-feat"><span>📍</span><div><strong>Hos dere eller oss</strong><p>Vi kommer ut til bedriften ved behov</p></div></div>
+              <div class="b-feat"><span>📊</span><div><strong>Samlet oversikt</strong><p>Vi holder styr på fornyelsesdatoer</p></div></div>
+              <div class="b-feat"><span>💰</span><div><strong>Volumrabatter</strong><p>Gode priser ved kursing av grupper</p></div></div>
+            </div>
+            <a href="#kontakt" class="btn btn--orange">Be om tilbud</a>
+          </div>
+          <div class="bedrift-logos">
+            <p>Vi samarbeider med transportbedrifter i hele Nord-Norge</p>
+            <div class="logo-tiles">
+              <div class="logo-tile">Bygg &amp; Anlegg</div>
+              <div class="logo-tile">Kollektivtransport</div>
+              <div class="logo-tile">Godstransport</div>
+              <div class="logo-tile">Offshore &amp; Industri</div>
+              <div class="logo-tile">Kommuner</div>
+              <div class="logo-tile">NAV tiltaksplasser</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ===== PROSESS ===== -->
   <section class="section prosess" id="prosess">
     <div class="container">
-      <div class="section__header">
-        <span class="section__tag">Slik fungerer det</span>
-        <h2 class="section__title">Fra påmelding til sertifikat</h2>
+      <div class="section__header section__header--light">
+        <span class="tag tag--light">Slik fungerer det</span>
+        <h2>Fra første henvendelse til sertifikat i lomma</h2>
       </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step__number">1</div>
-          <h3 class="step__title">Ta kontakt</h3>
-          <p class="step__desc">Ring oss eller fyll ut kontaktskjemaet. Vi veileder deg til riktig kurs basert på din situasjon.</p>
+      <div class="prosess-steps">
+        <div class="ps">
+          <div class="ps__num">01</div>
+          <div class="ps__line"></div>
+          <div class="ps__icon">📞</div>
+          <h4>Ta kontakt</h4>
+          <p>Ring oss eller send e-post. Vi veileder deg gratis til riktig kurs og hjelper med finansiering via NAV eller Lånekassen.</p>
         </div>
-        <div class="step__arrow">→</div>
-        <div class="step">
-          <div class="step__number">2</div>
-          <h3 class="step__title">Teoriundervisning</h3>
-          <p class="step__desc">Start med teori i klasserom eller digitalt. Grundig gjennomgang av trafikkregler og sikkerhet.</p>
+        <div class="ps">
+          <div class="ps__num">02</div>
+          <div class="ps__line"></div>
+          <div class="ps__icon">📚</div>
+          <h4>Teori</h4>
+          <p>Grundig teoriundervisning i klasserom. Alle nødvendige tema gjennomgås grundig av erfarne instruktører.</p>
         </div>
-        <div class="step__arrow">→</div>
-        <div class="step">
-          <div class="step__number">3</div>
-          <h3 class="step__title">Kjøreopplæring</h3>
-          <p class="step__desc">Praktisk kjøring med erfaren instruktør. Vi starter rolig og øker progresjon i ditt tempo.</p>
+        <div class="ps">
+          <div class="ps__num">03</div>
+          <div class="ps__line"></div>
+          <div class="ps__icon">🚛</div>
+          <h4>Kjørepraksis</h4>
+          <p>Praktisk opplæring med moderne kjøretøy. Du øver i ditt eget tempo med individuell oppfølging.</p>
         </div>
-        <div class="step__arrow">→</div>
-        <div class="step">
-          <div class="step__number">4</div>
-          <h3 class="step__title">Bestå eksamen</h3>
-          <p class="step__desc">Teori- og oppkjøring hos Statens vegvesen. Du er godt forberedt – 95% av våre elever består!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== HVORFOR OSS ===== -->
-  <section class="section hvorfor-oss" id="hvorfor-oss">
-    <div class="container">
-      <div class="hvorfor-inner">
-        <div class="hvorfor-content">
-          <span class="section__tag">Hvorfor velge oss</span>
-          <h2 class="section__title">Vi setter eleven i sentrum</h2>
-          <p>Hos Buss &amp; Vogntogskolen AS får du ikke bare et sertifikat – du får en solid faglig plattform som gjør deg til en trygg og profesjonell yrkessjåfør.</p>
-          <ul class="check-list">
-            <li><span class="check">✓</span> Personlig oppfølging gjennom hele kurset</li>
-            <li><span class="check">✓</span> Fleksible start- og sluttdatoer</li>
-            <li><span class="check">✓</span> Finansieringsbistand (NAV, Lånekassen)</li>
-            <li><span class="check">✓</span> Jobbformidling etter bestått eksamen</li>
-            <li><span class="check">✓</span> Moderne kjøretøy med det siste sikkerhetsutstyret</li>
-            <li><span class="check">✓</span> Instruktører med lang erfaring fra transportbransjen</li>
-          </ul>
-          <a href="#kontakt" class="btn btn--primary">Start i dag</a>
-        </div>
-        <div class="hvorfor-visual">
-          <div class="testimonial-stack">
-            <div class="testimonial">
-              <p>"Uten Buss &amp; Vogntogskolen hadde jeg aldri blitt bussjåfør. Instruktørene er tålmodige og dyktige!"</p>
-              <div class="testimonial__author">
-                <strong>Lars Eriksen</strong>
-                <span>Bussjåfør, Ruter AS</span>
-              </div>
-            </div>
-            <div class="testimonial">
-              <p>"Bestod klasse CE på første forsøk takket være grundig opplæring. Kan varmt anbefales!"</p>
-              <div class="testimonial__author">
-                <strong>Mette Johansen</strong>
-                <span>Vogntogssjåfør, DB Schenker</span>
-              </div>
-            </div>
-            <div class="testimonial">
-              <p>"Fantastisk skole! Hjalp meg med finansiering gjennom NAV og var støttende hele veien."</p>
-              <div class="testimonial__author">
-                <strong>Ahmed Hassan</strong>
-                <span>Sjåfør, Nettbuss</span>
-              </div>
-            </div>
-          </div>
+        <div class="ps">
+          <div class="ps__num">04</div>
+          <div class="ps__line"></div>
+          <div class="ps__icon">🏆</div>
+          <h4>Bestå eksamen</h4>
+          <p>Teori- og oppkjøring hos Statens vegvesen. Du er grundig forberedt og klar til å lykkes.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== INSTRUKTORER ===== -->
-  <section class="section instruktorer" id="instruktorer">
+  <!-- ===== BEDRIFT BANNER ===== -->
+  <section class="bedrift-banner" id="bedrift">
     <div class="container">
-      <div class="section__header">
-        <span class="section__tag">Teamet vårt</span>
-        <h2 class="section__title">Møt instruktørene</h2>
-        <p class="section__desc">Alle våre instruktører er godkjente av Statens vegvesen og har bred erfaring fra transportbransjen.</p>
-      </div>
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="team-card__avatar">👨‍✈️</div>
-          <h3 class="team-card__name">Bjørn Haugen</h3>
-          <span class="team-card__role">Daglig leder &amp; Hovedinstruktør</span>
-          <p class="team-card__bio">25 år som yrkessjåfør og 15 år som instruktør. Spesialist på klasse D og YSK.</p>
-          <div class="team-card__badges">
-            <span class="badge">Klasse D</span>
-            <span class="badge">YSK</span>
-            <span class="badge">CE</span>
-          </div>
+      <div class="bedrift-banner__inner">
+        <div>
+          <h2>Er du arbeidsgiver eller HR-ansvarlig?</h2>
+          <p>Vi er Nordnorges foretrukne opplæringspartner for transportnæringen. Kontakt oss for et uforpliktende tilbud.</p>
         </div>
-        <div class="team-card">
-          <div class="team-card__avatar">👩‍✈️</div>
-          <h3 class="team-card__name">Ingrid Solberg</h3>
-          <span class="team-card__role">Instruktør – Buss og Lastebil</span>
-          <p class="team-card__bio">Tidligere bussjåfør i 12 år. Kjent for sin rolige og pedagogiske tilnærming til undervisning.</p>
-          <div class="team-card__badges">
-            <span class="badge">Klasse D</span>
-            <span class="badge">Klasse C</span>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-card__avatar">👨‍🔧</div>
-          <h3 class="team-card__name">Tor Andresen</h3>
-          <span class="team-card__role">Instruktør – Vogntog</span>
-          <p class="team-card__bio">20 år i internasjonal langtransport. Ekspert på kobling, manovrering og sikring av last.</p>
-          <div class="team-card__badges">
-            <span class="badge">Klasse CE</span>
-            <span class="badge">YSK</span>
-          </div>
-        </div>
+        <a href="#kontakt" class="btn btn--white">Be om bedriftstilbud →</a>
       </div>
     </div>
   </section>
@@ -334,54 +571,67 @@
   <section class="section kontakt" id="kontakt">
     <div class="container">
       <div class="section__header">
-        <span class="section__tag">Kontakt</span>
-        <h2 class="section__title">Ta kontakt med oss</h2>
-        <p class="section__desc">Vi svarer raskt og hjelper deg å finne det beste kurset for din situasjon.</p>
+        <span class="tag">Kontakt</span>
+        <h2>Ta kontakt – vi svarer raskt</h2>
+        <p>Har du spørsmål om kurs, priser eller finansiering? Vi hjelper deg å finne det beste alternativet.</p>
       </div>
       <div class="kontakt-inner">
+
+        <!-- Info -->
         <div class="kontakt-info">
-          <div class="info-item">
-            <div class="info-item__icon">📍</div>
+          <div class="ki">
+            <div class="ki__icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
             <div>
-              <strong>Adresse</strong>
-              <p>Transportveien 15<br />0656 Oslo</p>
+              <strong>Besøksadresse</strong>
+              <p>Kongens gate 55, 5. etg.<br>Sentrumsgården, 8514 Narvik</p>
             </div>
           </div>
-          <div class="info-item">
-            <div class="info-item__icon">📞</div>
+          <div class="ki">
+            <div class="ki__icon">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            </div>
             <div>
               <strong>Telefon</strong>
-              <p><a href="tel:+4722334455">22 33 44 55</a></p>
+              <p><a href="tel:+4776963000">76 96 30 00</a></p>
             </div>
           </div>
-          <div class="info-item">
-            <div class="info-item__icon">✉️</div>
+          <div class="ki">
+            <div class="ki__icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
             <div>
               <strong>E-post</strong>
-              <p><a href="mailto:post@bussvogntog.no">post@bussvogntog.no</a></p>
+              <p><a href="mailto:post@transportskolen.com">post@transportskolen.com</a></p>
             </div>
           </div>
-          <div class="info-item">
-            <div class="info-item__icon">🕐</div>
+          <div class="ki">
+            <div class="ki__icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke="white" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            </div>
             <div>
               <strong>Åpningstider</strong>
-              <p>Man–fre: 08:00–16:00<br />Lørdag: 09:00–14:00</p>
+              <p>Man–fre: 08:00–16:00<br>Lørdag: 09:00–13:00</p>
             </div>
           </div>
-          <div class="map-placeholder">
-            <span>📍 Kart lastes her</span>
-            <small>Transportveien 15, Oslo</small>
+          <div class="ki ki--map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1771.2!2d17.427!3d68.438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjjCsDI2JzE4LjAiTiAxN8KwMjUnMzcuMiJF!5e0!3m2!1sno!2sno!4v1234567890"
+              width="100%" height="220" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" title="Kart til Buss &amp; Vogntogskolen AS"></iframe>
           </div>
         </div>
+
+        <!-- Form -->
         <form class="kontakt-form" id="kontakt-form" novalidate>
           <div class="form-group">
-            <label for="navn">Navn *</label>
-            <input type="text" id="navn" name="navn" placeholder="Ditt fulle navn" required />
+            <label for="navn">Fullt navn *</label>
+            <input type="text" id="navn" name="navn" placeholder="Ola Nordmann" required />
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="epost">E-post *</label>
-              <input type="email" id="epost" name="epost" placeholder="din@epost.no" required />
+              <input type="email" id="epost" name="epost" placeholder="ola@eksempel.no" required />
             </div>
             <div class="form-group">
               <label for="telefon">Telefon</label>
@@ -389,24 +639,44 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="kurs">Kurs du er interessert i</label>
+            <label for="kurs">Hva er du interessert i?</label>
             <select id="kurs" name="kurs">
               <option value="">– Velg kurs –</option>
-              <option value="klasse-d">Klasse D – Buss</option>
-              <option value="klasse-c">Klasse C – Lastebil</option>
-              <option value="klasse-ce">Klasse CE – Vogntog</option>
-              <option value="ysk">YSK – Yrkessjåførkurs</option>
-              <option value="bedrift">Bedriftskurs</option>
-              <option value="oppfriskning">Oppfriskningskurs</option>
+              <optgroup label="Førerkort">
+                <option value="klasse-c">Klasse C – Lastebil</option>
+                <option value="klasse-ce">Klasse CE – Vogntog</option>
+                <option value="klasse-d">Klasse D – Buss</option>
+                <option value="klasse-be">Klasse BE – Tilhenger</option>
+              </optgroup>
+              <optgroup label="Spesialkurs">
+                <option value="adr">ADR – Farlig gods</option>
+                <option value="kran">Lastebilkran</option>
+                <option value="maskin">Maskinføring</option>
+                <option value="truck">Truck / Stortruck</option>
+              </optgroup>
+              <optgroup label="Kompetanse">
+                <option value="ysk">YSK – Yrkessjåfør</option>
+                <option value="tachograf">Digital tachograf</option>
+                <option value="lastsikring">Sikring av last</option>
+              </optgroup>
+              <option value="bedrift">Bedriftskurs / Tilbud</option>
+              <option value="annet">Annet / Vet ikke</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="melding">Melding</label>
-            <textarea id="melding" name="melding" rows="4" placeholder="Fortell oss litt om deg selv og din bakgrunn..."></textarea>
+            <label for="melding">Din melding</label>
+            <textarea id="melding" name="melding" rows="4" placeholder="Fortell oss litt om deg selv, din bakgrunn og hva du ønsker å oppnå..."></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">Send henvendelse</button>
+          <div class="form-group form-group--check">
+            <label class="checkbox-label">
+              <input type="checkbox" name="nav" />
+              <span>Jeg er interessert i finansiering via NAV</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--orange btn--full">Send henvendelse</button>
+          <p class="form-note">Vi svarer normalt innen 1 virkedag. Dine opplysninger behandles etter GDPR.</p>
           <div class="form-success" id="form-success" hidden>
-            <span>✅</span> Takk! Vi tar kontakt innen 1 virkedag.
+            ✅ Takk for henvendelsen! Vi tar kontakt snarest.
           </div>
         </form>
       </div>
@@ -415,52 +685,73 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <a href="#" class="logo logo--light">
-          <span class="logo__icon">🚌</span>
-          <span class="logo__text">Buss &amp; Vogntogskolen <em>AS</em></span>
-        </a>
-        <p>Profesjonell yrkessjåføropplæring siden 2003. Godkjent trafikkskole med høy bestått-prosent.</p>
-      </div>
-      <div class="footer__links">
-        <h4>Navigasjon</h4>
-        <ul>
-          <li><a href="#om-oss">Om oss</a></li>
-          <li><a href="#kurs">Kurs</a></li>
-          <li><a href="#hvorfor-oss">Hvorfor oss</a></li>
-          <li><a href="#instruktorer">Instruktører</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4>Kurs</h4>
-        <ul>
-          <li><a href="#kurs">Klasse D – Buss</a></li>
-          <li><a href="#kurs">Klasse C – Lastebil</a></li>
-          <li><a href="#kurs">Klasse CE – Vogntog</a></li>
-          <li><a href="#kurs">YSK – Yrkessjåførkurs</a></li>
-          <li><a href="#kurs">Bedriftskurs</a></li>
-        </ul>
-      </div>
-      <div class="footer__contact">
-        <h4>Kontakt</h4>
-        <p>📍 Transportveien 15, 0656 Oslo</p>
-        <p>📞 <a href="tel:+4722334455">22 33 44 55</a></p>
-        <p>✉️ <a href="mailto:post@bussvogntog.no">post@bussvogntog.no</a></p>
-        <div class="social-links">
-          <a href="#" class="social-link" aria-label="Facebook">f</a>
-          <a href="#" class="social-link" aria-label="Instagram">in</a>
-          <a href="#" class="social-link" aria-label="LinkedIn">li</a>
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="logo logo--footer">
+            <div class="logo__mark">
+              <svg viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="8" fill="#E85D04"/>
+                <path d="M6 26h4v4H6zm8 0h4v4h-4zm8 0h4v4h-4z" fill="white" opacity=".6"/>
+                <path d="M4 22l2-8h22l2 8H4z" fill="white"/>
+                <circle cx="10" cy="28" r="3" fill="white"/>
+                <circle cx="26" cy="28" r="3" fill="white"/>
+                <path d="M30 18h4l2 4v4h-6v-8z" fill="white" opacity=".8"/>
+              </svg>
+            </div>
+            <div class="logo__text-wrap">
+              <span class="logo__name logo__name--light">Buss &amp; Vogntogskolen</span>
+              <span class="logo__sub logo__sub--light">AS · Narvik</span>
+            </div>
+          </a>
+          <p>Totalleverandør av opplæring for transportnæringen siden 1990. Kongens gate 55, 8514 Narvik.</p>
+          <p class="footer__org">Org.nr. 912 163 717</p>
+        </div>
+        <div class="footer__col">
+          <h4>Førerkort</h4>
+          <ul>
+            <li><a href="#kurs">Klasse C – Lastebil</a></li>
+            <li><a href="#kurs">Klasse CE – Vogntog</a></li>
+            <li><a href="#kurs">Klasse D – Buss</a></li>
+            <li><a href="#kurs">Klasse BE</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Spesialkurs</h4>
+          <ul>
+            <li><a href="#kurs">ADR – Farlig gods</a></li>
+            <li><a href="#kurs">Lastebilkran</a></li>
+            <li><a href="#kurs">Maskinføring</a></li>
+            <li><a href="#kurs">Truck &amp; Stortruck</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Kompetanse</h4>
+          <ul>
+            <li><a href="#kurs">YSK – Yrkessjåfør</a></li>
+            <li><a href="#kurs">Digital tachograf</a></li>
+            <li><a href="#kurs">Sikring av last</a></li>
+            <li><a href="#kurs">Bedriftskurs</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+4776963000">76 96 30 00</a></li>
+            <li><a href="mailto:post@transportskolen.com">post@transportskolen.com</a></li>
+            <li>Man–fre 08–16</li>
+            <li>Lørdag 09–13</li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="container">
-        <p>&copy; 2024 Buss &amp; Vogntogskolen AS – Org.nr. 987 654 321 – <a href="#">Personvernerklæring</a></p>
+      <div class="footer__bottom">
+        <p>&copy; 2024 Buss &amp; Vogntogskolen AS – <a href="#">Personvern</a> – Nettsted av <em>transportskolen.com</em></p>
       </div>
     </div>
   </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="back-top" aria-label="Til toppen">↑</button>
 
   <script src="js/main.js"></script>
 </body>
